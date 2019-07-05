@@ -125,7 +125,24 @@ $("#header_menu_link").click(function(){
   $(".header__nav").toggleClass("menu_open");
   $(".header__social").toggleClass("menu_open");
 });
-var rating_food; 
+$(document).ready(function(){
+ 
+  $(window).scroll(function(){
+  if ($(this).scrollTop() > 100) {
+  $('.scrollup').fadeIn();
+  $('.scrollup').css("display", "flex")
+  } else {
+  $('.scrollup').fadeOut();
+  }
+  });
+   
+  $('.scrollup').click(function(){
+  $("html, body").animate({ scrollTop: 0 }, 600);
+  return false;
+  });
+   
+  });
+  var rating_food; 
   rating_food = rating_food_v.getAttribute('value')+'%';
   document.getElementById('rating_food_v_b').style.width=rating_food;
   document.getElementById('rating_food_v_c').textContent=rating_food;
