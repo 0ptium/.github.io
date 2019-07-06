@@ -4,7 +4,3 @@ css/main.min.css
 img/favicon.ico
 img/logo.webp
 js/index.js
-https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap
-
-NETWORK:
-https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap
